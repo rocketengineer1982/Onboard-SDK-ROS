@@ -3,10 +3,10 @@
     <!-- node parameters -->
     <param name="serial_name" type="string" value="/dev/ttyUSB0"/>
     <param name="baud_rate" type="int" value="921600"/>
-    <param name="app_id" type="int" value="your app id here"/>
+    <param name="app_id" type="int" value="1087039"/>
     <param name="app_version" type="int" value="1"/>
     <param name="align_time" type="bool" value="false"/>
-    <param name="enc_key" type="string" value="your app key here"/>
+    <param name="enc_key" type="string" value="8fa0fed711f5ccab63e5065f0c48a9c26d19f7e83e1174de005af9c708eaeafa"/>
     <param name="use_broadcast" type="bool" value="false"/>
     </node>
 </launch>
