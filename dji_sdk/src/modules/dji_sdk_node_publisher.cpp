@@ -168,7 +168,7 @@ DJISDKNode::dataBroadcastCallback()
     msg_battery_state.capacity = vehicle->broadcast->getBatteryInfo().capacity / 1000.0;
     msg_battery_state.voltage  = vehicle->broadcast->getBatteryInfo().voltage / 1000.0;
     msg_battery_state.current  = vehicle->broadcast->getBatteryInfo().current / 1000.0;
-    msg_battery_state.percentage = vehicle->broadcast->getBatteryInfo().percentage;
+    msg_battery_state.percentage = vehicle->broadcast->getBatteryInfo().percentage / 100.0;
     msg_battery_state.charge   = NAN;
     msg_battery_state.design_capacity = NAN;
     msg_battery_state.power_supply_health = msg_battery_state.POWER_SUPPLY_HEALTH_UNKNOWN;
@@ -247,7 +247,7 @@ DJISDKNode::publish5HzData(Vehicle *vehicle, RecvContainer recvFrame,
   msg_battery_state.capacity = battery_info.capacity / 1000.0;
   msg_battery_state.voltage  = battery_info.voltage / 1000.0;
   msg_battery_state.current  = battery_info.current / 1000.0;
-  msg_battery_state.percentage = battery_info.percentage;
+  msg_battery_state.percentage = battery_info.percentage / 100.0;
   msg_battery_state.charge   = NAN;
   msg_battery_state.design_capacity = NAN;
   msg_battery_state.power_supply_health = msg_battery_state.POWER_SUPPLY_HEALTH_UNKNOWN;
